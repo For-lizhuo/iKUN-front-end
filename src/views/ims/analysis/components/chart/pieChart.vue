@@ -61,7 +61,7 @@ export default {
       this.chart = echarts.init(this.$el,this.className);
       let option = {
         title: {
-          text: '计算机科学与技术学院实习情况统计',
+          text: '软件学院实习情况统计',
           left: 'center'
         },
         tooltip: {
@@ -91,7 +91,7 @@ export default {
               { value: 280, name: '实习中' },
             ]*/,
             animationEasing: 'cubicInOut',
-            animationDuration: 2600
+            animationDuration: 10
           }
         ]
       }

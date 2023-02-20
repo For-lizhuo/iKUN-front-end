@@ -102,8 +102,8 @@ export const constantRoutes = [
         path: '/practice/internshipChange',
         hidden: true,
         component: (resolve) => require(['@/views/ims/practice/internshipChange'], resolve),
-        name: '实习单位变更',
-        meta: { title: '实习单位变更', icon: 'dashboard', noCache: true, affix: false }
+        name: '实习信息修改',
+        meta: { title: '实习信息修改', icon: 'dashboard', noCache: true, affix: false }
       },
       {
         path: '/thesis/topic',

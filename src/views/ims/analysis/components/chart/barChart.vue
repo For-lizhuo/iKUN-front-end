@@ -6,7 +6,7 @@
 import echarts from "echarts";
 import resize from "../../../../dashboard/mixins/resize";
 
-const animationDuration = 6000
+const animationDuration = 2000
 export default {
   mixins: [resize],
   name: "iKUNBarChart",
@@ -52,10 +52,10 @@ export default {
   methods:{
     /** 获取bar数据 */
     getBarData(obj){
-      this.xAxisData = obj.xAxisData;
-      this.seriesData1 = obj.seriesData1;
-      this.seriesData2 = obj.seriesData2;
-      this.seriesData3 = obj.seriesData3;
+      this.xAxisData = ['软件学院','计算机学院','电子信息与通信技术学院','网络空间与安全学院'];
+      this.seriesData1 = [10,23,16,7];
+      this.seriesData2 = [2,6,5,1];
+      this.seriesData3 = [20,26,17,10];
       this.seriesName1 = obj.seriesName1;
       this.seriesName2 = obj.seriesName2;
       this.seriesName3 = obj.seriesName3;

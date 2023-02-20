@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <el-form :model="queryParams" ref="queryForm" :rules="rules" label-width="68px" inline>
+    <!-- <el-form :model="queryParams" ref="queryForm" :rules="rules" label-width="68px" inline>
       <el-form-item label="学年" prop="academicYear">
         <el-date-picker clearable size="small" style="width: 200px"
                         v-model="queryParams.academicYear"
@@ -53,13 +53,13 @@
         <el-button type="cyan" icon="el-icon-search" size="mini" @click="handleQuery">搜索</el-button>
         <el-button icon="el-icon-refresh" size="mini" @click="resetQuery">重置</el-button>
       </el-form-item>
-    </el-form>
+    </el-form> -->
     <!--标签页切换-->
     <el-tabs v-model="activeName" :stretch="true" @tab-click="handleClick">
       <el-tab-pane label="学生实习统计" name="1">
         <intern-statistics ref="internData" v-if="activeName === '1'" />
         </el-tab-pane>
-      <el-tab-pane label="实习周记统计" name="2">
+      <!-- <el-tab-pane label="实习周记统计" name="2">
         <intern-weekly-statistics ref="weeklyData" v-if="activeName === '2'"/>
       </el-tab-pane>
       <el-tab-pane label="实习总结统计" name="3">
@@ -67,7 +67,7 @@
       </el-tab-pane>
       <el-tab-pane label="实习工资统计" name="4">
         <intern-ware-statistics ref="wareData" v-if="activeName === '4'"/>
-      </el-tab-pane>
+      </el-tab-pane> -->
      <!-- <el-tab-pane label="实习分数统计" name="5">
         <intern-salary-statistics v-if="activeName === '5'"/>
       </el-tab-pane>-->

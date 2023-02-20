@@ -5,7 +5,7 @@
         <el-col>
           <el-card class="box-card mb20">
             <i class="el-icon-close pull-right" @click="cancel"></i>
-            <h2 style="text-align: center">实习单位变更申请表</h2>
+            <h2 style="text-align: center">实习信息修改申请表</h2>
             <el-form ref="form" :model="form" :rules="rules" label-width="150px" inline>
               <el-form-item label="实习单位" prop="companyId">
                 <el-select v-model="form.companyId" clearable allow-create filterable placeholder="请选择实习单位" style="width: 400px">
@@ -161,7 +161,7 @@ export default {
       single: true,
       // 非多个禁用
       multiple: true,
-      //实习单位变更申请表
+      //实习信息修改申请表
       showApplicationForm:false,
       //
       showCard: false,
