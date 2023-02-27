@@ -56,7 +56,7 @@
           style="width:100%;height: 38px"
           
         >
-          <span>注册</span>
+          <span onclick='javascript:alert("请联系管理员: vae141592653@163.com")'>注 册</span>
         </el-button>
       </el-form-item>
     </el-form>
